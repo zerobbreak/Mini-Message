@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 New Message Form
+  
+  div
+    // Create a form with method 'post' and action '/submit' (you can change the action accordingly)
+    form(method='post')
+        // Input field for the author's name
+        label(for='author') Author's Name:
+        input(type='text', name='author', id='author', required)
+
+        // Input field for the message text
+        label(for='message') Message Text:
+        textarea(name='message', id='message', required)
+
+        // Submit button
+        button(type='submit') Submit
